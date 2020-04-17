@@ -1,8 +1,8 @@
-##Date Time Library for Android
+## Date Time Library for Android
 This library is a extension of ThreeTenABP by JakeWatron
 
 
-#Formatter
+# Formatter
 
 fun LocalDateTime.toIsoLocalDateTimeString(): String
 // => 2020-04-21T05:21:13
@@ -21,10 +21,10 @@ LocalDateTime.toStringWithPattern(pattern: String): String
 fun Month.fullDisplayName(): String // April
 fun Month.shortDisplayName(): String // Apr
 
-#Parser
+# Parser
 fun String?.toIsoLocalDateTime(): LocalDateTime?
 // "2020-04-21T05:21:13" => LocalDateTime
 
-#Calculator
+# Calculator
 fun durationInDaysAndHours(from: LocalDateTime, to: LocalDateTime): Pair<Int, Int>
 /** Return duration in a format "x days and y hours"*/
